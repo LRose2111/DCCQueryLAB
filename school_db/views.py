@@ -147,10 +147,14 @@ SELECT `school_db_instructor`.`id`,
 # Print the instructors name and courses that he belongs to in the terminal 
 # (Do not hard code his name in the print)
 def problem_three(request):
+  course_instructor = Instructor.objects.get(pk=2)
+  instructor_courses = Course.objects.filter(instructor_id=2)
+  print(f'Instructor name: {course_instructor.first_name} {course_instructor.last_name}') 
+  print('Courses:')
+  for course in instructor_courses:
+    print(f'{course.name}')
+  return complete(request)
 
-
-
-    return complete(request)
 
 
 # Supporting Query Method Documentation:
@@ -195,10 +199,14 @@ SELECT `school_db_instructor`.`id`,
 
 # Get the count of students, courses, and instructors and print them in the terminal
 def problem_four(request):
+ 
+
+
+ 
+  return complete(request)
 
 
 
-    return complete(request)
 
 
 # Supporting Query Method Documentation:
