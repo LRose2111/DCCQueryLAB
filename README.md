@@ -1,1 +1,1 @@
-# DCCQueryLAB
+# querying-lab
